@@ -1,0 +1,61 @@
+/* Generelle styles - Variabler */
+:root {
+  /* aubergine */
+  --aubergineD: #3d1a20;
+  --aubergine: #63313a;
+
+  /* red */
+  --red90: rgb(218, 96, 78, 90);
+  --red: #da604e;
+  --redD: #be4937;
+
+  /* beige */
+  --beige90: rgb(255, 233, 195, 90);
+  --beige: #ffe9c3;
+  --beigeL: #fff1db;
+
+  /* gold */
+  --guld90: rgb(240, 185, 33, 90);
+  --guld: #f0b921;
+
+  /* cyan */
+  --cyan50: rgb(110, 187, 164, 50);
+  --cyan90: rgb(110, 187, 164, 90);
+  --cyan: #6ebba4;
+  --cyanL: #83c9b1;
+
+  /* font */
+  --primary-font: "carnivalee_freakshowregular";
+  /* .pridi-regular: font-family: "Pridi", serif;*/
+  --secondary-font: "Pridi", serif;
+
+  /* font-sizes */
+  /* DESKTOP */
+  --h1-textD1: 1.9rem;
+  --h1-textD2: 2.2rem;
+  --h1-textD3: 2.6rem;
+
+  --h2-textD1: 1.6rem;
+  --h2-textD2: 1.9rem;
+  --h2-textD3: 2.3rem;
+
+  /* buttons samme size her, bare med uppercase - det samme med links = underline*/
+  --body-textD1: 1rem;
+  --body-textD2: 1.1rem;
+  --body-textD3: 1.3rem;
+
+  /* MOBILE */
+  --h1-textM1: 1.1rem;
+  --h1-textM2: 1.3rem;
+
+  /* bold/italic eller lign. så det ikke ligner body text */
+  --h2-textM1: 1rem;
+  --h2-textM2: 1.1rem;
+
+  /* buttons samme size her, bare med uppercase - det samme med links = underline*/
+  --body-textM1: 0.9rem;
+  --body-textM2: 1rem;
+
+  /* til banner line */
+  --line-color: #ffe9c3;
+}
