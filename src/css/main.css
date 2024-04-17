@@ -1,15 +1,31 @@
 /* Generelle styles - Variabler */
 :root {
-  /* farver */
-  --blueD: #3e5c6d;
-  --blue: #789db2;
-  --red: #f24822;
-  --grey: #eeeeee;
-  --greyD: #9e9e9e;
-  --white: #ffffff;
+  /* aubergine */
+  --aubergineD: #3d1a20;
+  --aubergine: #63313a;
+
+  /* red */
+  --red90: rgb(218, 96, 78, 90);
+  --red: #da604e;
+  --redD: #be4937;
+
+  /* beige */
+  --beige90: rgb(255, 233, 195, 90);
+  --beige: #ffe9c3;
+  --beigeL: #fff1db;
+
+  /* gold */
+  --guld90: rgb(240, 185, 33, 90);
+  --guld: #f0b921;
+
+  /* cyan */
+  --cyan50: rgb(110, 187, 164, 50);
+  --cyan90: rgb(110, 187, 164, 90);
+  --cyan: #6ebba4;
+  --cyanL: #83c9b1;
 
   /* font */
-  --primary-font: ;
+  --primary-font: "Arial, Helvetica, sans-serif";
   /* .pridi-regular: font-family: "Pridi", serif;*/
   --secondary-font: "Pridi", serif;
 
