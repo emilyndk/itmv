@@ -1,13 +1,18 @@
 ---
 import Boxes from "../components/boxes.astro";
+
+const {pTextT} = Astro.props;
+const {pTextB} = Astro.props;
 ---
 
 <div id="facts_background">
     <div id="position">
     <img class="top" src="/facts_graphics/top.svg" alt="top graphic">
-    <Boxes />
-    <Boxes />
-    <Boxes />
+    <Boxes pTextT="Hvilket tekstil udleder 3 gange så meget CO2 som uld?" pTextB="Polyester udleder 3 gange så meget CO2 som uld."/>
+    <img class="clickable1" src="/facts_graphics/clickable1.svg" alt="clickable graphic">
+    <Boxes pTextT="Hvor meget tøj kasseres årligt på global plan?" pTextB="Cirka 677 tons nyt tøj bliver smidt ud hvert år. 95% af alt det tøj, som smides ud, kunne godt have blevet genbrugt."/>
+    <Boxes pTextT="Hvor mange % udgør tøjindustrien af verdens drivhusgasser?" pTextB="8%"/>
+    <img class="clickable2" src="/facts_graphics/clickable.svg" alt="clickable graphic">
     <img class="bottom" src="/facts_graphics/bottom.svg" alt="bottom graphic">
     </div>
 </div>
@@ -28,5 +33,44 @@ import Boxes from "../components/boxes.astro";
     width: 50%;
     height: auto;
     padding: 30px 0;
+}
+
+.clickable1 {
+    position: absolute;
+    width:5.3%;
+    height: auto;
+    top: 1060px;
+    right: 250px;
+  /* animation-iteration-count:infinite;
+  animation-duration: 3s; */
+   animation: klik_puls 1.5s ease-in-out infinite;
+     transform: scaleX(-1);
+}
+
+/* Vha. Chatgpt */
+/* Definer en ny nøgleframes animation */
+@keyframes klik_puls {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.clickable2 {
+    position: absolute;
+    width: 8%;
+    height: auto;
+    top: 1060px;
+    right: 250px;
+  /* animation-iteration-count:infinite;
+  animation-duration: 3s; */
+   animation: klik_puls 1.5s ease-in-out infinite;
+     transform: scaleX(-1);
 }
 </style>

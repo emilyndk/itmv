@@ -1,0 +1,29 @@
+---
+const {p} = Astro.props;
+---
+
+<div class="layout">
+ <img src="/facts_graphics/heart_icon.svg" alt="heart icon">
+ <p class="p">{p}</p>
+ </div>
+
+
+<style>
+img {
+  width: 10%;
+  height: auto;
+}
+
+.layout {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 10px 0;
+}
+
+.p {
+  padding: 20px 0;
+}
+
+</style>
