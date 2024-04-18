@@ -1,3 +1,22 @@
+/* ---------------------------reset--------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* ---------------------------reset--------------------------- */
+
 /* Generelle styles - Variabler */
 :root {
   /* farver */
@@ -11,8 +30,6 @@
 
   /* font */
   --primary-font: "Arial, Helvetica, sans-serif";
-  /* .pridi-regular: font-family: "Pridi", serif;*/
-  --secondary-font: "Pridi", serif;
 
   /* font-sizes */
   /* DESKTOP */
@@ -36,11 +53,4 @@
   /* bold/italic eller lign. så det ikke ligner body text */
   --h2-textM1: 1rem;
   --h2-textM2: 1.1rem;
-
-  /* buttons samme size her, bare med uppercase - det samme med links = underline*/
-  --body-textM1: 0.9rem;
-  --body-textM2: 1rem;
-
-  /* til banner line */
-  --line-color: #ffe9c3;
 }
