@@ -5,22 +5,39 @@
 <div class="box">
     <div class="sewline">
         <div class="card">
-            <div id="front">
+            <div class="front">
                 <img src="/facts_graphics/heart_icon.svg" alt="heart icon">
+                <p>WUHUU</p>
             </div>
-            <div id="back">
+            <div class="back">
                 <img src="/facts_graphics/heart_icon.svg" alt="heart icon">
+                <p>WHAT?AAAAAAAAA</p>
             </div>
         </div>
     </div>
 </div>
 
 <style>
-    .sewline {
-/*   background-color: transparent; */
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
+
+.box {
+  background-color:var(--grey);
+  width: 547px;
+  height: 507px;
+  align-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border: dashed var(--red) 7px;
+}
+
+.sewline {
+  /* border: dashed 4px red;
+  width: 100%;
+  height: auto; */
+}
+
+img {
+  width: 10%;
+  height: auto;
 }
 
 .card {
@@ -30,14 +47,13 @@
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.sewline.active .card {
+.box.active .card {
   transform: rotateY(180deg);
 }
 
-#front, #back {
+.front, .back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -45,19 +61,15 @@
 }
 
 .front {
-  background-color: #dcd060;
-  color: black;
 }
 
 .back {
-  background-color: #61639e;
-  color: white;
   transform: rotateY(180deg);
 }
 </style>
 
-<!-- <script>
-    let card = document.querySelector('.sewline');
+<script>
+    let card = document.querySelector('.box');
 
 card.addEventListener('click', function() {
   
@@ -68,4 +80,4 @@ card.addEventListener('click', function() {
     card.classList.add('active');
   }
 });
-</script> -->
+</script>
