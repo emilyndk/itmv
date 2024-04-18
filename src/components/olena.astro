@@ -3,6 +3,67 @@ import "../css/olena.css"
 import "../css/main.css"
 ---
 
-<div class="container">
-    <img src="/img/olena.svg" alt="olena">
-</div>
+
+<body>
+
+    <div class="container">
+        <img src="img/olena.jpg" alt="olena" class="billede">
+        <img src="img/olena_mobil4.jpg" alt="olena" class="billede2">
+        <div class="overlay">
+            <h1>Olena</h1>
+            <p>Jeg hedder Olena. Jeg er 53 år. Jeg arbejder her, fordi jobcentret hjalp mig med at finde et arbejde.
+                Jeg arbejder på projekter og gardiner. Jeg kan godt lide at arbejde her, fordi jeg elsker at sy så
+                meget. Jeg har syet i flere år. Min erfaring er stor. Jeg broderer også her men syr mere...</p>
+        </div>
+
+        <div class="leftpin"> <img src="img/left_pin.svg" alt="left pin"></div>
+        <div class="rightpin"> <img src="img/right_pin.svg" alt="right pin"></div>
+
+        <div class="play" id="playButton">
+            <img src="img/play.svg" alt="play">
+        </div>
+
+        <div class="timebar-container">
+            <div class="timebar-grey"></div>
+            <div class="timebar-red"></div>
+            <div class="timebar-filled"></div>
+        </div>
+    </div>
+
+
+
+    <audio id="audioPlayer" src="audio/Sequence 01_1.mp4"></audio>
+
+
+</body>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playButton = document.getElementById('playButton');
+
+        playButton.addEventListener('click', () => {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playButton.innerHTML = '<img src="img/pause.svg" alt="pause">'; // Change to pause button image
+            } else {
+                audioPlayer.pause();
+                playButton.innerHTML = '<img src="img/play.svg" alt="play">'; // Change to play button image
+            }
+        });
+
+
+        const timebarFilled = document.querySelector('.timebar-filled');
+
+        audioPlayer.addEventListener('timeupdate', () => {
+            const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+            timebarFilled.style.width = `${progress}%`;
+        });
+    })
+
+
+
+</script>
+
+</html>
