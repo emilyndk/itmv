@@ -1,0 +1,69 @@
+#step_screen {
+  width: 100%;
+  aspect-ratio: 1170/500;
+  position: relative;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+#step_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+#step_container {
+  width: 100%;
+  aspect-ratio: 390/53;
+  position: absolute;
+  top: 37%;
+}
+
+#step_sprite {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(/img/step1mob.svg);
+}
+
+@media (min-width: 800px) {
+  #step_screen {
+    aspect-ratio: 1440/200;
+  }
+
+  #step_container {
+    width: 100%;
+    aspect-ratio: 1512/112;
+    position: absolute;
+    top: 30%;
+  }
+
+  #step_sprite {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(/img/step1com.svg);
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/img/step1photo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

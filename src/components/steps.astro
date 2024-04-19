@@ -1,16 +1,18 @@
 ---
 import "../css/steps.css"
-import Card from "../components/stepcard.astro"
 ---
 
-<Card>
+<div id="step_screen">
+        <div id="step_background">
+            <div id="step_container">
+                <div id="step_sprite"></div>
+            </div>
+        </div>
+    </div>
+<div class="parallax"></div>
 
-</Card>
-
-<Card>
-    
-</Card>
-
-<Card>
-    
-</Card>
+<div style="height:1000px;background-color:rgb(255, 255, 255);font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
