@@ -21,16 +21,20 @@
   position: relative;
   z-index: 3;
   opacity: 1;
-  margin-top: 0;
+  margin-top: 365px;
   margin-bottom: 10%;
+  padding: 20px 0; 
+  border-top: 5px dashed var(--blue);
+  border-bottom: 5px dashed var(--blue);
 }
 
 .brands {
     display: flex;
+     align-items: center;
+     gap: 150px;
     width: 100%;
     height: auto;
-  white-space: nowrap;
-  animation: scroll 10s linear infinite;
+  animation: scroll 24s linear infinite;
   left: -100%; /* Start fra højre side af containeren */
   opacity: 1;
 }
@@ -44,10 +48,26 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
+  
+.rullende_brands {
+  margin-top: 345px;
+  margin-bottom: 10%;
+  padding: 20px 0; 
+  border-top: 2.3px dashed var(--blue);
+  border-bottom: 2.5px dashed var(--blue);
+}
+
+.brands {
+     gap: 55px;
+    width: 200%;
+    height: auto;
+}
+}
+
+@media (min-width: 1920px) {
   .rullende_brands {
-    max-width: 1900px;
-    width: 100%;
+     margin-top: 365px;
   }
 }
 </style>
