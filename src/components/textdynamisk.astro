@@ -10,7 +10,7 @@ const {p} = Astro.props;
 
 <style>
 img {
-  width: 10%;
+  width: 13%;
   height: auto;
 }
 
@@ -24,6 +24,17 @@ padding: 10px 0;
 
 .p {
   padding: 20px 0;
+}
+
+@media (max-width: 800px) {
+  img {
+  width: 23%;
+  height: auto;
+}
+
+.p {
+  padding: 5px 0;
+}
 }
 
 </style>

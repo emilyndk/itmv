@@ -23,13 +23,13 @@ width: 40%;
 height: 290px;
   padding: 20px;
    margin: 15px 0;
-   background: rgba(120, 157, 178, 0.2);
+   background: #E4EBF0;
    color:var(--blueD);
    font-size: 30px;
    font-weight: normal;
-   border: 4.5px dashed var(--red);
+   border: 5px dashed var(--red);
    border-radius: 10px;
-   box-shadow: 0 0 0 4px rgba(120, 157, 178, 0.2);
+   box-shadow: 0 0 0 4px #E4EBF0;
 
    cursor: pointer;
 }
@@ -56,6 +56,17 @@ height: 290px;
 
 .back {
   transform: rotateY(180deg);
+}
+
+@media (max-width: 800px) {
+  .box {
+width: 45%;
+height: 180px;
+  padding: 10px;
+   margin: 7.5px 0;
+   font-size: 15px;
+   border: 2.5px dashed var(--red);
+}
 }
 </style>
 
