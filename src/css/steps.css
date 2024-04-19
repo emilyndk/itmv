@@ -1,3 +1,4 @@
+/* -------------- Step vectors -------------- */
 #step_screen {
   width: 100%;
   aspect-ratio: 1170/500;
@@ -17,7 +18,7 @@
 
 #step_container {
   width: 100%;
-  aspect-ratio: 390/53;
+  aspect-ratio: 390/54;
   position: absolute;
   top: 37%;
 }
@@ -27,6 +28,48 @@
   height: 100%;
   background-size: cover;
   background-image: url(/img/step1mob.svg);
+}
+
+#step2_container {
+  width: 100%;
+  aspect-ratio: 390/53;
+  position: absolute;
+  top: 37%;
+}
+
+#step2_sprite {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(/img/step2mob.svg);
+}
+
+#step3_container {
+  width: 100%;
+  aspect-ratio: 390/54;
+  position: absolute;
+  top: 37%;
+}
+
+#step3_sprite {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(/img/step3mob.svg);
+}
+
+#step4_container {
+  width: 100%;
+  aspect-ratio: 390/55;
+  position: absolute;
+  top: 37%;
+}
+
+#step4_sprite {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(/img/step4mob.svg);
 }
 
 @media (min-width: 800px) {
@@ -47,7 +90,51 @@
     background-size: cover;
     background-image: url(/img/step1com.svg);
   }
+
+  #step2_container {
+    width: 100%;
+    aspect-ratio: 1512/108;
+    position: absolute;
+    top: 30%;
+  }
+
+  #step2_sprite {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(/img/step2com.svg);
+  }
+
+  #step3_container {
+    width: 100%;
+    aspect-ratio: 1512/108;
+    position: absolute;
+    top: 30%;
+  }
+
+  #step3_sprite {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(/img/step3com.svg);
+  }
+
+  #step4_container {
+    width: 100%;
+    aspect-ratio: 1512/108;
+    position: absolute;
+    top: 30%;
+  }
+
+  #step4_sprite {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(/img/step4com.svg);
+  }
 }
+
+/* -------------- parralax vectors --------------*/
 
 body,
 html {
@@ -66,4 +153,88 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("/img/step2photo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("/img/step3photo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  /* The image used */
+  background-image: url("/img/step4photo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* -------------- text --------------*/
+
+p {
+  font-family: var(--primary-font);
+  color: var(--blueD);
+  font-size: 20px;
+  text-align: justify;
+}
+
+a {
+  color: var(--red);
+}
+
+a:link {
+  color: var(--red);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--blue);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.text {
+  padding-top: 50px;
+  /* padding-bottom: 30px; */
+  margin: 0 20%;
+}
+
+@media (min-width: 800px) {
+  p {
+    font-size: 25px;
+  }
+
+  .text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 35%;
+  }
 }
