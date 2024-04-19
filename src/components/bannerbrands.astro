@@ -1,0 +1,50 @@
+---
+
+---
+
+ <div class="rullende_brands">
+    <div class="brands">
+        <a href="https://brandts.dk/"><img src="/banner/brandts_kunsthal.svg" alt="Kunst Museum Brandts"></a>
+    </div>
+</div>
+
+<style>
+    /******* Rullende text ************/
+
+.rullende_forside_tekst {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  letter-spacing: 5.6px;
+  z-index: 100;
+  opacity: 1;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+.rullende_text {
+  white-space: nowrap;
+  animation: scroll 20s linear infinite; /* Juster varighed og timing efter dine behov */
+
+  left: -100%; /* Start fra højre side af containeren */
+  opacity: 1;
+  color: var(--secondary-cl);
+  font-family: var(--secondary-font);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 800px) {
+  .rullende_forside_tekst {
+    max-width: 1900px;
+    width: 100%;
+  }
+}
+</style>
