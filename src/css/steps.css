@@ -18,9 +18,8 @@
 
 #step_container {
   width: 100%;
-  aspect-ratio: 390/54;
+  aspect-ratio: 390/170;
   position: absolute;
-  top: 37%;
 }
 
 #step_sprite {
@@ -30,46 +29,66 @@
   background-image: url(/img/step1mob.svg);
 }
 
-#step2_container {
+#about {
   width: 100%;
-  aspect-ratio: 390/53;
-  position: absolute;
-  top: 37%;
+  aspect-ratio: 390/466;
+  position: relative;
+  overflow: hidden;
+  container-type: inline-size;
 }
 
-#step2_sprite {
+#about_background {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-image: url(/img/step2mob.svg);
-}
-
-#step3_container {
-  width: 100%;
-  aspect-ratio: 390/54;
   position: absolute;
-  top: 37%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url(/img/step2framemob.svg);
 }
 
-#step3_sprite {
+#about_elements {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-image: url(/img/step3mob.svg);
-}
-
-#step4_container {
-  width: 100%;
-  aspect-ratio: 390/55;
   position: absolute;
-  top: 37%;
+  top: 0;
+  left: 0;
 }
 
-#step4_sprite {
+#about2 {
+  width: 100%;
+  aspect-ratio: 390/541;
+  position: relative;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+#about_background2 {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-size: cover;
-  background-image: url(/img/step4mob.svg);
+  background-image: url(/img/step3framemob.svg);
+}
+
+#about3 {
+  width: 100%;
+  aspect-ratio: 390/685;
+  position: relative;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+#about_background3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url(/img/step4framemob.svg);
 }
 
 @media (min-width: 800px) {
@@ -79,16 +98,16 @@
 
   #step_container {
     width: 100%;
-    aspect-ratio: 1512/112;
+    aspect-ratio: 1512/210;
     position: absolute;
-    top: 30%;
+    top: 0;
   }
 
   #step_sprite {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-image: url(/img/step1com.svg);
+    background-image: url(/img/step1frame2com.svg);
   }
 
   #step2_container {
@@ -98,39 +117,28 @@
     top: 30%;
   }
 
-  #step2_sprite {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-image: url(/img/step2com.svg);
+  #about {
+    aspect-ratio: 1512/734;
   }
 
-  #step3_container {
-    width: 100%;
-    aspect-ratio: 1512/108;
-    position: absolute;
-    top: 30%;
+  #about_background {
+    background-image: url(/img/step2framecom.svg);
   }
 
-  #step3_sprite {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-image: url(/img/step3com.svg);
+  #about2 {
+    aspect-ratio: 1512/807;
   }
 
-  #step4_container {
-    width: 100%;
-    aspect-ratio: 1512/108;
-    position: absolute;
-    top: 30%;
+  #about_background2 {
+    background-image: url(/img/step3framecom.svg);
   }
 
-  #step4_sprite {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-image: url(/img/step4com.svg);
+  #about3 {
+    aspect-ratio: 1512/900;
+  }
+
+  #about_background3 {
+    background-image: url(/img/step4framecom.svg);
   }
 }
 
@@ -201,7 +209,7 @@ html {
 p {
   font-family: var(--primary-font);
   color: var(--blueD);
-  font-size: 20px;
+  font-size: 3.5vw;
   text-align: justify;
 }
 
@@ -221,20 +229,32 @@ a:hover {
   text-decoration: underline;
 }
 
-.text {
+#text {
   padding-top: 50px;
   /* padding-bottom: 30px; */
   margin: 0 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.colour p {
+  background-color: var(--white);
+  padding: 10px;
 }
 
 @media (min-width: 800px) {
   p {
-    font-size: 25px;
+    font-size: 1.6vw;
   }
 
-  .text {
+  #text {
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0 35%;
+  }
+
+  .colour p {
+    background-color: var(--grey);
+    padding: 10px;
   }
 }
