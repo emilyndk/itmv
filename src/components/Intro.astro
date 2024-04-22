@@ -4,7 +4,7 @@
 
 <body>
   <article id="intro_text">
-    <p class="text">
+    <p class="p_text">
       I Tråd Med Verden (ITMV) er en socialøkonomisk virksomhed drevet af
       foreningen I Tråd Med Verden. I partnerskab med KAB driver vi sy- og
       design værksteder i udsatte boligområder, hvor vi arbejder med design og
@@ -12,7 +12,7 @@
       jobmuligheder, netværk og livskvalitet for mennesker, som har mistet
       fodfæste på arbejdsmarkedet.
     </p>
-    <p class="text">
+    <p class="p_text">
       Formålet er desuden at være en lokal ressource med henblik på at danne
       fællesskaber og generere viden omkring genanvendelse af tekstil. Vores
       arbejde er et lokalt og meget konkret bud på, hvordan man kan arbejde med
@@ -20,12 +20,15 @@
       på, hvor det er nødvendigt at finde løsninger på de problemer
       tekstilindustrien skaber.
     </p>
-    <p class="text">
+    <p class="p_text">
       På værkstederne arbejder syerske i fleksjob eller småjob samt en gruppe
       borgere i virksomhedspraktik. Som medarbejder og praktikant indgår man i
       produktionen og i arbejdsfællesskabet sammen med værkstedernes faste team
       af designere og socialt fagligt personale.
     </p>
+    <div>
+      <img src="img/vector_snor.png" alt="snor" class="snor" />
+    </div>
   </article>
   <div>
     <a href="https://www.itmv.dk/">
@@ -41,42 +44,64 @@
       <img src="img/linkedin.png" alt="linkedin" class="linkedin" />
     </a>
   </div>
+  <div>
+    <img src="img/grafik.png" alt="nål" class="grafik_nål" />
+  </div>
 </body>
 
 <style>
   #intro_text {
     background-color: lightgrey;
+    padding-bottom: 100px;
+  }
+  .p_text {
+    padding-top: 40px;
+    margin: 0 34%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6vw;
   }
   .ikon {
     position: absolute;
-    width: 80px;
+    width: 70px;
     z-index: 1;
     left: 90%;
-    top: 155%;
+    top: 145%;
     cursor: pointer;
   }
   .insta {
     position: absolute;
-    width: 70px;
+    width: 60px;
     z-index: 1;
     left: 90.5%;
-    top: 178%;
+    top: 164%;
     cursor: pointer;
   }
   .fb {
     position: absolute;
-    width: 70px;
+    width: 60px;
+    z-index: 1;
+    left: 90.5%;
+    top: 182%;
+    cursor: pointer;
+  }
+  .linkedin {
+    position: absolute;
+    width: 60px;
     z-index: 1;
     left: 90.5%;
     top: 200%;
     cursor: pointer;
   }
-  .linkedin {
+  .grafik_nål {
+    position: relative;
+    width: 130px;
+    left: 45%;
+  }
+  .snor {
+    z-index: 0;
     position: absolute;
-    width: 70px;
-    z-index: 1;
-    left: 90.5%;
-    top: 222%;
-    cursor: pointer;
+    top: 125%;
+    width: 90%;
   }
 </style>
