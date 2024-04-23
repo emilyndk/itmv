@@ -4,14 +4,16 @@
 
 <footer>
   <div class="container">
-    <div>
+    <div class="content">
       <p class="p_footer">
-        TEKST EMILY NIELSEN <br /><br />VISUEL FORMIDLING MIV BERG, MELINA
-        GRAFF, LAURA NIELSEN OG EMILY NIELSEN <br /><br />KODE MIV BERG, MELINA
-        GRAFF, LAURA NIELSEN OG EMILY NIELSEN <br /><br />REDAKTØR MIV BERG,
-        MELINA GRAFF, LAURA NIELSEN OG EMILY NIELSEN <br /><br />UDGIVET 24.
-        April 2024 <br /><br />BILLEDKILDER: FOTOS AF LOKATIONER FRA I TRÅD MED
-        VERDEN OG DERES MEDARBEJDERE <br /><br />LYDKILDE: Navn STEMME
+        TEKST:<br /> EMILY NIELSEN <br /><br />VISUEL FORMIDLING:<br /> MIV BERG,
+        MELINA GRAFF, LAURA NIELSEN OG EMILY NIELSEN <br /><br />KODE:<br /> MIV
+        BERG, MELINA GRAFF, LAURA NIELSEN OG EMILY NIELSEN <br /><br />REDAKTØR:
+        MIV BERG, MELINA GRAFF,<br /> LAURA NIELSEN OG EMILY NIELSEN <br /><br
+        />UDGIVET: 24. April 2024 <br /><br />BILLEDeKILDER: FOTOS AF LOKATIONER<br
+        />
+        FRA I TRÅD MED VERDEN OG DERES MEDARBEJDERE <br /><br />LYDKILDE: Navn
+        STEMME
       </p>
     </div>
   </div>
@@ -22,8 +24,9 @@
   @media (min-width: 800px) {
     .p_footer {
       margin: 0 20%;
-      padding-top: 50px;
+      padding-top: 100px;
       text-transform: uppercase;
+      color: var(--blueD);
     }
     .container {
       position: relative;
@@ -37,5 +40,22 @@
 
   /* style for mobil */
   @media (max-width: 800px) {
+    .container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 390/285;
+      background-image: url("img/footer_mobil.svg");
+      background-size: cover;
+      background-position: center;
+    }
+    .p_footer {
+      padding-left: 30px;
+      padding-right: 60px;
+      padding-top: 30px;
+      font-size: 1.8vw;
+      text-transform: uppercase;
+      color: var(--blueD);
+      /* background-color: var(--white); */
+    }
   }
 </style>
