@@ -1,43 +1,37 @@
 ---
+import TextDynamisk from "./textdynamisk.astro"
 
+const {pTextT} = Astro.props;
+const {pTextB} = Astro.props;
 ---
 
 <div class="box">
-    <div class="sewline">
-        <div class="card">
+      <div class="card">
             <div class="front">
-                <img src="/facts_graphics/heart_icon.svg" alt="heart icon">
-                <p>WUHUU</p>
+                <TextDynamisk p={pTextT} />
             </div>
             <div class="back">
-                <img src="/facts_graphics/heart_icon.svg" alt="heart icon">
-                <p>WHAT?AAAAAAAAA</p>
+                <TextDynamisk p={pTextB} />
             </div>
-        </div>
-    </div>
+      </div>
 </div>
 
+
 <style>
-
 .box {
-  background-color:var(--grey);
-  width: 547px;
-  height: 507px;
-  align-content: center;
-  border-radius: 5px;
-  cursor: pointer;
-  border: dashed var(--red) 7px;
-}
+width: 40%;
+height: 290px;
+  padding: 20px;
+   margin: 15px 0;
+   background: #E4EBF0;
+   color:var(--blueD);
+   font-size: 30px;
+   font-weight: normal;
+   border: 5px dashed var(--red);
+   border-radius: 10px;
+   box-shadow: 0 0 0 4px #E4EBF0;
 
-.sewline {
-  /* border: dashed 4px red;
-  width: 100%;
-  height: auto; */
-}
-
-img {
-  width: 10%;
-  height: auto;
+   cursor: pointer;
 }
 
 .card {
@@ -60,18 +54,28 @@ img {
   backface-visibility: hidden;
 }
 
-.front {
-}
-
 .back {
   transform: rotateY(180deg);
+}
+
+@media (max-width: 800px) {
+  .box {
+width: 45%;
+height: 180px;
+  padding: 10px;
+   margin: 7.5px 0;
+   font-size: 15px;
+   border: 2.5px dashed var(--red);
+}
 }
 </style>
 
 <script>
-    let card = document.querySelector('.box');
+let cards = document.querySelectorAll('.box');
 
-card.addEventListener('click', function() {
+cards.forEach(function(card) {
+
+  card.addEventListener('click', function() {
   
   if(card.classList.contains('active')) { 
     card.classList.remove('active');
@@ -80,4 +84,8 @@ card.addEventListener('click', function() {
     card.classList.add('active');
   }
 });
+});
 </script>
+
+
+

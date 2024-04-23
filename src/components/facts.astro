@@ -1,9 +1,142 @@
 ---
 import Boxes from "../components/boxes.astro";
+
+const {pTextT} = Astro.props;
+const {pTextB} = Astro.props;
 ---
 
 <div id="facts_background">
-    <img src="/facts_graphics/top.svg" alt="topgraphic">
-    <Boxes />
-    <img src="/facts_graphics/bottom.svg" alt="bottomgrphic">
+    <div id="position">
+      <img class="sewline" src="/facts_graphics/sewline.svg" alt="sewline background image">
+    <img class="top" src="/facts_graphics/top.svg" alt="top graphic">
+    <Boxes pTextT="Hvilket tekstil udleder 3 gange så meget CO2 som uld?" pTextB="Polyester udleder 3 gange så meget CO2 som uld."/>
+    <img class="clickable1" src="/facts_graphics/clickable1.svg" alt="clickable graphic">
+    <Boxes pTextT="Hvor meget tøj kasseres årligt på global plan?" pTextB="Cirka 677 tons nyt tøj bliver smidt ud hvert år. 95% af alt det tøj, som smides ud, kunne godt have blevet genbrugt."/>
+    <Boxes pTextT="Hvor mange % udgør tøjindustrien af verdens drivhusgasser?" pTextB="8%"/>
+    <img class="clickable2" src="/facts_graphics/clickable.svg" alt="clickable graphic" loading="lazy">
+    <img class="bottom" src="/facts_graphics/bottom.svg" alt="bottom graphic" loading="lazy">
+    <img class="blob" src="/facts_graphics/blobbund.svg" alt="blob background graphic">
+    </div>
 </div>
+
+<style>
+    #facts_background {
+         display: flex;
+  justify-content: center;
+    }
+
+    #position {
+      position: relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+.top, .bottom {
+    margin: auto;
+    width: 50%;
+    height: auto;
+    padding: 30px 0;
+    z-index: 1;
+  filter: drop-shadow(0 0 0.9rem white);
+}
+
+.clickable1 {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    top: 495px;
+    right: 251px;
+  /* animation-iteration-count:infinite;
+  animation-duration: 3s; */
+   animation: klik_puls 1.5s ease-in-out infinite;
+     transform: scaleX(-1);
+}
+
+.clickable2 {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    bottom: 183px;
+    left: 259px;
+  /* animation-iteration-count:infinite;
+  animation-duration: 3s; */
+   animation: klik_puls 1.5s ease-in-out infinite;
+     transform: scaleX(-1);
+}
+
+/* Vha. Chatgpt */
+/* Definer en ny nøgleframes animation */
+@keyframes klik_puls {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.blob {
+    position: absolute;
+    top: 100%;
+    z-index: -2; 
+    width: 162.3%; 
+    height: auto;
+}
+
+.sewline {
+   position: absolute;
+    top: -20%;
+    z-index: -1; 
+    width: 40%; 
+    height: auto;
+}
+
+@media (max-width: 800px) {
+  .blob {
+    width: 100%; 
+    height: auto;
+}
+
+.sewline {
+    top: -20%;
+    width: 60%; 
+    height: auto;
+}
+
+
+.clickable1 {
+    width: 13%;
+    height: auto;
+    top: 295px;
+    right: 75px;
+}
+
+.clickable2 {
+    width: 13%;
+    height: auto;
+    bottom: 105px;
+    left: 80px;
+  /* animation-iteration-count:infinite;
+  animation-duration: 3s; */
+   animation: klik_puls 1.5s ease-in-out infinite;
+     transform: scaleX(-1);
+}
+
+.top, .bottom {
+    width: 60%;
+    height: auto;
+    padding: 30px 0;
+    z-index: 1;
+}
+}
+
+@media (min-width:1920px) {
+  .blob {
+  width: 203.4%;
+  }
+}
+</style>

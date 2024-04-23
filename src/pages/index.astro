@@ -1,24 +1,33 @@
 ---
-import "../css/main.css"
-import Facts from "../components/facts.astro"
-import Steps from "../components/steps.astro"
-import Process from "../components/process.astro"
-import Olena from "../components/olena.astro"
+import "../css/main.css";
+import Hero from "../components/Hero.astro";
+import Intro from "../components/Intro.astro";
+import Facts from "../components/facts.astro";
+import Steps from "../components/steps.astro";
+import Process from "../components/process.astro";
+import Olena from "../components/olena.astro";
+import Bannerbrands from "../components/bannerbrands.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="da">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>I tråd med verden</title>
-	</head>
-	<body>
-		<h1>Tehee</h1>
-		<Process/>
-		<Olena/>
-		<Steps/>
-		<Facts/>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>I tråd med verden</title>
+  </head>
+  <body>
+    <Hero />
+    <Intro />
+    <Process />
+    <Olena />
+    <Steps />
+    <Facts />
+    <Bannerbrands />
+  </body>
+  <footer>
+    <Footer />
+  </footer>
 </html>

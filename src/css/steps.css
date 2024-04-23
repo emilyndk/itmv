@@ -1,0 +1,260 @@
+/* -------------- Step vectors -------------- */
+#step_screen {
+  width: 100%;
+  aspect-ratio: 1170/500;
+  position: relative;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+#step_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+#step_container {
+  width: 100%;
+  aspect-ratio: 390/170;
+  position: absolute;
+}
+
+#step_sprite {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(/img/step1mob.svg);
+}
+
+#about {
+  width: 100%;
+  aspect-ratio: 390/466;
+  position: relative;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+#about_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url(/img/step2framemob.svg);
+}
+
+#about_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#about2 {
+  width: 100%;
+  aspect-ratio: 390/541;
+  position: relative;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+#about_background2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url(/img/step3framemob.svg);
+}
+
+#about3 {
+  width: 100%;
+  aspect-ratio: 390/685;
+  position: relative;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+#about_background3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url(/img/step4framemob.svg);
+}
+
+@media (min-width: 800px) {
+  #step_screen {
+    aspect-ratio: 1440/200;
+  }
+
+  #step_container {
+    width: 100%;
+    aspect-ratio: 1512/210;
+    position: absolute;
+    top: 0;
+  }
+
+  #step_sprite {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(/img/step1frame2com.svg);
+  }
+
+  #step2_container {
+    width: 100%;
+    aspect-ratio: 1512/108;
+    position: absolute;
+    top: 30%;
+  }
+
+  #about {
+    aspect-ratio: 1512/734;
+  }
+
+  #about_background {
+    background-image: url(/img/step2framecom.svg);
+  }
+
+  #about2 {
+    aspect-ratio: 1512/807;
+  }
+
+  #about_background2 {
+    background-image: url(/img/step3framecom.svg);
+  }
+
+  #about3 {
+    aspect-ratio: 1512/900;
+  }
+
+  #about_background3 {
+    background-image: url(/img/step4framecom.svg);
+  }
+}
+
+/* -------------- parralax vectors --------------*/
+
+body,
+html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/img/step1photo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("/img/step2photo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("/img/step3photo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  /* The image used */
+  background-image: url("/img/step4photo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* -------------- text --------------*/
+
+p {
+  font-family: var(--primary-font);
+  color: var(--blueD);
+  font-size: 3.5vw;
+  text-align: justify;
+}
+
+a {
+  color: var(--red);
+}
+
+a:link {
+  color: var(--red);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--blue);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#text {
+  padding-top: 50px;
+  /* padding-bottom: 30px; */
+  margin: 0 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.colour p {
+  background-color: var(--white);
+  padding: 10px;
+}
+
+@media (min-width: 800px) {
+  p {
+    font-size: 1.6vw;
+  }
+
+  #text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 35%;
+  }
+
+  .colour p {
+    background-color: var(--grey);
+    padding: 10px;
+  }
+}

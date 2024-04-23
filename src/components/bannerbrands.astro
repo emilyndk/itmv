@@ -1,0 +1,73 @@
+---
+
+---
+
+ <div class="rullende_brands">
+    <div class="brands">
+        <a href="https://brandts.dk/" target="_blank"><img src="/banner/brandts_kunsthal.svg" alt="Kunst Museum Brandts' logo"></a>
+        <a href="https://stilling.dk/" target="_blank"><img src="/banner/stilling.svg" alt="Stilling's logo"></a>
+        <a href="https://copenhagenphotofestival.com/" target="_blank"><img src="/banner/cph.svg" alt="Copenhagen Photo Festival's logo"></a>
+        <a href="https://natmus.dk/museer-og-slotte/nationalmuseet/" target="_blank"><img src="/banner/n.svg" alt="Nationalmuseet's logo/"></a>
+        <a href="https://glyptoteket.dk/" target="_blank"><img src="/banner/glyptoteket.svg" alt="Glyptoteket's logo"></a>
+    </div>
+</div>
+
+<style>
+    /******* Rullende text ************/
+.rullende_brands {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  opacity: 1;
+  margin-top: 365px;
+  margin-bottom: 10%;
+  padding: 20px 0; 
+  border-top: 5px dashed var(--blue);
+  border-bottom: 5px dashed var(--blue);
+}
+
+.brands {
+    display: flex;
+     align-items: center;
+     gap: 150px;
+    width: 100%;
+    height: auto;
+  animation: scroll 24s linear infinite;
+  left: -100%; /* Start fra højre side af containeren */
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 800px) {
+  
+.rullende_brands {
+  margin-top: 345px;
+  margin-bottom: 10%;
+  padding: 20px 0; 
+  border-top: 2.3px dashed var(--blue);
+  border-bottom: 2.5px dashed var(--blue);
+}
+
+.brands {
+     gap: 55px;
+    width: 200%;
+    height: auto;
+}
+}
+
+@media (min-width: 1920px) {
+  .rullende_brands {
+     margin-top: 365px;
+  }
+}
+</style>
