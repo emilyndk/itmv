@@ -30,27 +30,4 @@ img {
 
   /* font */
   --primary-font: "Arial, Helvetica, sans-serif";
-
-  /* font-sizes */
-  /* DESKTOP */
-  --h1-textD1: 1.9rem;
-  --h1-textD2: 2.2rem;
-  --h1-textD3: 2.6rem;
-
-  --h2-textD1: 1.6rem;
-  --h2-textD2: 1.9rem;
-  --h2-textD3: 2.3rem;
-
-  /* buttons samme size her, bare med uppercase - det samme med links = underline*/
-  --body-textD1: 1rem;
-  --body-textD2: 1.1rem;
-  --body-textD3: 1.3rem;
-
-  /* MOBILE */
-  --h1-textM1: 1.1rem;
-  --h1-textM2: 1.3rem;
-
-  /* bold/italic eller lign. så det ikke ligner body text */
-  --h2-textM1: 1rem;
-  --h2-textM2: 1.1rem;
 }
