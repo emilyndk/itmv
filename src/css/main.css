@@ -54,3 +54,7 @@ img {
   --h2-textM1: 1rem;
   --h2-textM2: 1.1rem;
 }
+
+.scroll {
+  position: sticky;
+}
