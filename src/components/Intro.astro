@@ -3,9 +3,8 @@
 ---
 
 <body>
-  <div class="container_intro">
-    <img src="img/baggrund_pc" alt="baggrund pc" class="baggrund" />
-    <article id="intro_text">
+  <div class="container">
+    <div class="content">
       <p class="p_text">
         I Tråd Med Verden (ITMV) er en socialøkonomisk virksomhed drevet af
         foreningen I Tråd Med Verden. I partnerskab med KAB driver vi sy- og
@@ -29,33 +28,35 @@
         team af designere og socialt fagligt personale.
       </p>
       <div>
-        <img src="img/vector_snor.png" alt="snor" class="snor" />
+        <a href="https://www.itmv.dk/">
+          <img src="img/icon.svg" alt="ikon" class="ikon" />
+        </a>
+        <a href="https://www.instagram.com/itraadmedverden">
+          <img src="img/insta.svg" alt="insta" class="insta" />
+        </a>
+        <a href="https://www.facebook.com/itraadmedverden">
+          <img src="img/facebook.svg" alt="facebook" class="fb" />
+        </a>
+        <a href="https://www.linkedin.com/company/i-tr%C3%A5d-med-verden/">
+          <img src="img/linkedin.svg" alt="linkedin" class="linkedin" />
+        </a>
       </div>
-    </article>
-    <div>
-      <a href="https://www.itmv.dk/">
-        <img src="img/icon.svg" alt="ikon" class="ikon" />
-      </a>
-      <a href="https://www.instagram.com/itraadmedverden">
-        <img src="img/insta.svg" alt="insta" class="insta" />
-      </a>
-      <a href="https://www.facebook.com/itraadmedverden">
-        <img src="img/facebook.svg" alt="facebook" class="fb" />
-      </a>
-      <a href="https://www.linkedin.com/company/i-tr%C3%A5d-med-verden/">
-        <img src="img/linkedin.svg" alt="linkedin" class="linkedin" />
-      </a>
     </div>
   </div>
 </body>
 
 <style>
-  #intro_text {
-    background-color: lightgrey;
-    padding-bottom: 100px;
+  .container {
+    position: relative;
+    width: 100%;
+    height: 1360px;
+    background-image: url("img/baggrund_pc.svg");
+    background-size: cover;
+    background-position: center;
   }
+
   .p_text {
-    padding-top: 40px;
+    padding-top: 60px;
     margin: 0 34%;
     display: flex;
     justify-content: center;
@@ -66,7 +67,7 @@
     width: 70px;
     z-index: 1;
     left: 90%;
-    top: 145%;
+    top: 10%;
     cursor: pointer;
   }
   .insta {
@@ -74,7 +75,7 @@
     width: 60px;
     z-index: 1;
     left: 90.5%;
-    top: 164%;
+    top: 16%;
     cursor: pointer;
   }
   .fb {
@@ -82,7 +83,7 @@
     width: 60px;
     z-index: 1;
     left: 90.5%;
-    top: 182%;
+    top: 22%;
     cursor: pointer;
   }
   .linkedin {
@@ -90,18 +91,7 @@
     width: 60px;
     z-index: 1;
     left: 90.5%;
-    top: 200%;
+    top: 28%;
     cursor: pointer;
-  }
-  .grafik_nål {
-    position: relative;
-    width: 130px;
-    left: 45%;
-  }
-  .snor {
-    z-index: 0;
-    position: absolute;
-    top: 125%;
-    width: 90%;
   }
 </style>
