@@ -21,23 +21,24 @@ const {pTextB} = Astro.props;
 </div>
 
 <style>
-  .facts {
+    .facts {
     width: 100%;
-    aspect-ratio: 1512/3561;
+    aspect-ratio: 390/1153;
     position: relative;
     overflow: hidden;
     container-type: inline;
   }
-    #facts_background {
+
+     #facts_background {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background-size: cover;
-  background-image:url(/facts_graphics/sewline.svg);
+  background-image:url(/facts_graphics/sewlinem.svg);
     }
-
+    
     #position {
       position: relative;
         display:flex;
@@ -46,16 +47,23 @@ const {pTextB} = Astro.props;
         font-family: Arial, Helvetica, sans-serif;
         top: 10%;
     }
-.top, .bottom {
+
+    .top, .bottom {
+      margin: auto;
+    width: 60%;
+    height: auto;
+     padding: 30px 0;
+    z-index: 1;
+     filter: drop-shadow(0 0 0.9rem white);
+}
+
+/* .top, .bottom {
     margin: auto;
     width: 50%;
     height: auto;
-    padding: 30px 0;
-    z-index: 1;
-  filter: drop-shadow(0 0 0.9rem white);
-}
+} */
 
-.clickable1 {
+/* .clickable1 {
     position: absolute;
     width: 7%;
     height: auto;
@@ -63,9 +71,9 @@ const {pTextB} = Astro.props;
     right: 251px;
    animation: klik_puls 1.5s ease-in-out infinite;
      transform: scaleX(-1);
-}
+} */
 
-.clickable2 {
+/* .clickable2 {
     position: absolute;
     width: 7%;
     height: auto;
@@ -73,10 +81,10 @@ const {pTextB} = Astro.props;
     left: 259px;
    animation: klik_puls 1.5s ease-in-out infinite;
      transform: scaleX(-1);
-}
+} */
 
 /* Vha. Chatgpt */
-@keyframes klik_puls {
+/* @keyframes klik_puls {
   0% {
     transform: scale(1);
   }
@@ -86,65 +94,64 @@ const {pTextB} = Astro.props;
   100% {
     transform: scale(1);
   }
-}
+} */
 
-.blob {
+/* .blob {
     position: absolute;
     top: 100%;
     z-index: -2; 
     width: 162.3%; 
     height: auto;
-}
+} */
 
-@media (max-width: 800px) {
-  .facts {
+@media (min-width: 800px) {
+    .facts {
     width: 100%;
-    aspect-ratio: 390/1153;
+    aspect-ratio: 1512/3561;
     position: relative;
     overflow: hidden;
     container-type: inline;
   }
-    #facts_background {
+
+     #facts_background {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background-size: cover;
-  background-image:url(/facts_graphics/sewlinem.svg);
+  background-image:url(/facts_graphics/sewline.svg);
     }
-  .blob {
+
+   
+  /* .blob {
     width: 100%; 
     height: auto;
-}
+} */
 
-.clickable1 {
+/* .clickable1 {
     width: 13%;
     height: auto;
     top: 295px;
     right: 75px;
-}
+} */
 
-.clickable2 {
+/* .clickable2 {
     width: 13%;
     height: auto;
     bottom: 105px;
     left: 80px;
    animation: klik_puls 1.5s ease-in-out infinite;
      transform: scaleX(-1);
-}
+} */
 
-.top, .bottom {
-    width: 60%;
+/* .top, .bottom {
+    margin: auto;
+    width: 50%;
     height: auto;
     padding: 30px 0;
     z-index: 1;
-}
-}
-
-@media (min-width:1920px) {
-  .blob {
-  width: 203.4%;
-  }
+  filter: drop-shadow(0 0 0.9rem white);
+} */
 }
 </style>
