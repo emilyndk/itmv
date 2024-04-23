@@ -155,14 +155,14 @@ img {
   .play img {
     width: 2.5%;
     position: absolute;
-    top: 86%;
+    top: 76%;
     left: 74%;
   }
 
   .pause img {
     width: 2.5%;
     position: absolute;
-    top: 90%;
+    top: 76%;
     left: 74%;
     display: none;
   }
@@ -172,7 +172,7 @@ img {
     top: 42%;
     left: 55%;
     width: 40%;
-    height: 50%;
+    height: 40%;
     background-color: rgba(255, 255, 255, 0.9); /* Adjust opacity as needed */
     display: flex;
     flex-direction: column;
@@ -198,7 +198,7 @@ img {
     position: absolute;
     border-radius: 5px;
 
-    top: 83.5%; /* Adjust to position the timebar vertically */
+    top: 73%; /* Adjust to position the timebar vertically */
     left: 70%; /* Adjust to position the timebar horizontally */
     z-index: 3; /* Ensure the timebar is above the overlay */
   }
