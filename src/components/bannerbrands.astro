@@ -13,7 +13,6 @@
 </div>
 
 <style>
-    /******* Rullende text ************/
 .rullende_brands {
   width: 100%;
   height: auto;
@@ -21,19 +20,18 @@
   position: relative;
   z-index: 3;
   opacity: 1;
-  margin-top: 365px;
   margin-bottom: 10%;
   padding: 20px 0; 
-  border-top: 5px dashed var(--blue);
-  border-bottom: 5px dashed var(--blue);
+   border-top: 2.3px dashed var(--blue);
+  border-bottom: 2.5px dashed var(--blue);
 }
 
 .brands {
     display: flex;
      align-items: center;
-     gap: 150px;
-    width: 100%;
-    height: auto;
+     gap: 55px;
+     width: 200%;
+     height: auto;
   animation: scroll 24s linear infinite;
   left: -100%; /* Start fra højre side af containeren */
   opacity: 1;
@@ -48,26 +46,20 @@
   }
 }
 
-@media (max-width: 800px) {
-  
+
+
+@media (min-width: 800px) {
+      /******* Rullende text ************/
 .rullende_brands {
-  margin-top: 345px;
-  margin-bottom: 10%;
-  padding: 20px 0; 
-  border-top: 2.3px dashed var(--blue);
-  border-bottom: 2.5px dashed var(--blue);
+  border-top: 5px dashed var(--blue);
+  border-bottom: 5px dashed var(--blue);
 }
 
 .brands {
-     gap: 55px;
-    width: 200%;
+     gap: 150px;
+    width: 100%;
     height: auto;
 }
-}
 
-@media (min-width: 1920px) {
-  .rullende_brands {
-     margin-top: 365px;
-  }
 }
 </style>

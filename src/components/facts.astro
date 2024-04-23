@@ -5,9 +5,9 @@ const {pTextT} = Astro.props;
 const {pTextB} = Astro.props;
 ---
 
+<div class="facts">
 <div id="facts_background">
     <div id="position">
-      <img class="sewline" src="/facts_graphics/sewline.svg" alt="sewline background image">
     <img class="top" src="/facts_graphics/top.svg" alt="top graphic">
     <Boxes pTextT="Hvilket tekstil udleder 3 gange så meget CO2 som uld?" pTextB="Polyester udleder 3 gange så meget CO2 som uld."/>
     <img class="clickable1" src="/facts_graphics/clickable1.svg" alt="clickable graphic">
@@ -18,11 +18,24 @@ const {pTextB} = Astro.props;
     <img class="blob" src="/facts_graphics/blobbund.svg" alt="blob background graphic">
     </div>
 </div>
+</div>
 
 <style>
+  .facts {
+    width: 100%;
+    aspect-ratio: 1512/3561;
+    position: relative;
+    overflow: hidden;
+    container-type: inline;
+  }
     #facts_background {
-         display: flex;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image:url(/facts_graphics/sewline.svg);
     }
 
     #position {
@@ -31,6 +44,7 @@ const {pTextB} = Astro.props;
         flex-direction: column;
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
+        top: 10%;
     }
 .top, .bottom {
     margin: auto;
@@ -47,8 +61,6 @@ const {pTextB} = Astro.props;
     height: auto;
     top: 495px;
     right: 251px;
-  /* animation-iteration-count:infinite;
-  animation-duration: 3s; */
    animation: klik_puls 1.5s ease-in-out infinite;
      transform: scaleX(-1);
 }
@@ -59,14 +71,11 @@ const {pTextB} = Astro.props;
     height: auto;
     bottom: 183px;
     left: 259px;
-  /* animation-iteration-count:infinite;
-  animation-duration: 3s; */
    animation: klik_puls 1.5s ease-in-out infinite;
      transform: scaleX(-1);
 }
 
 /* Vha. Chatgpt */
-/* Definer en ny nøgleframes animation */
 @keyframes klik_puls {
   0% {
     transform: scale(1);
@@ -87,26 +96,27 @@ const {pTextB} = Astro.props;
     height: auto;
 }
 
-.sewline {
-   position: absolute;
-    top: -20%;
-    z-index: -1; 
-    width: 40%; 
-    height: auto;
-}
-
 @media (max-width: 800px) {
+  .facts {
+    width: 100%;
+    aspect-ratio: 390/1153;
+    position: relative;
+    overflow: hidden;
+    container-type: inline;
+  }
+    #facts_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image:url(/facts_graphics/sewlinem.svg);
+    }
   .blob {
     width: 100%; 
     height: auto;
 }
-
-.sewline {
-    top: -20%;
-    width: 60%; 
-    height: auto;
-}
-
 
 .clickable1 {
     width: 13%;
@@ -120,8 +130,6 @@ const {pTextB} = Astro.props;
     height: auto;
     bottom: 105px;
     left: 80px;
-  /* animation-iteration-count:infinite;
-  animation-duration: 3s; */
    animation: klik_puls 1.5s ease-in-out infinite;
      transform: scaleX(-1);
 }
