@@ -12,44 +12,76 @@
         arbejdet skal give succesoplevelser, motivation, glæde og en tro på
         fremtiden.
       </p>
-      <img src="img/logo.png" alt="logo" class="logo" />
     </div>
+    <img src="img/logo.png" alt="logo" class="logo" />
   </div>
 </body>
 
 <style>
-  .container_hero {
-    position: relative;
-    width: 100%;
+  @media (min-width: 800px) {
+    .container_hero {
+      position: relative;
+      width: 100%;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+    }
+    .logo {
+      z-index: 1;
+      position: absolute;
+      width: 140px;
+      left: 83%;
+      top: 70%;
+    }
+    .hero_text {
+      position: absolute;
+      top: 60%;
+      left: 3%;
+      color: white;
+      font-size: 24px;
+      z-index: 1;
+    }
+    .hero_h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      padding-right: 40rem;
+      padding-bottom: 10px;
+    }
+    .hero_p {
+      color: white;
+      padding-right: 35rem;
+    }
   }
 
-  .image {
-    width: 100%;
-    height: auto;
-  }
-  .logo {
-    z-index: 1;
-    position: absolute;
-    width: 140px;
-    left: 83%;
-    top: 32%;
-  }
-  .hero_text {
-    position: absolute;
-    top: 60%;
-    left: 3%;
-    color: white;
-    font-size: 24px;
-    z-index: 1;
-  }
-  .hero_h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    padding-right: 40rem;
-    padding-bottom: 10px;
-  }
-  .hero_p {
-    color: white;
-    padding-right: 35rem;
+  /* style for mobil */
+  @media (max-width: 800px) {
+    .logo {
+      z-index: 1;
+      position: absolute;
+      width: 50px;
+      left: 3%;
+      top: 5px;
+    }
+    .hero_h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+      text-transform: uppercase;
+      padding-right: 1rem;
+      padding-bottom: 10px;
+    }
+    .hero_text {
+      position: absolute;
+      top: 15%;
+      left: 3%;
+      color: white;
+      padding-right: 20px;
+      z-index: 1;
+    }
+    .hero_p {
+      color: white;
+      font-size: smaller;
+    }
   }
 </style>

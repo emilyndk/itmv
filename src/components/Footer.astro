@@ -3,30 +3,39 @@
 ---
 
 <footer>
-  <div>
-    <p class="p_footer">
-      TEKST EMILY NIELSEN <br /><br />VISUEL FORMIDLING MIV BERG, MELINA GRAFF,
-      LAURA NIELSEN OG EMILY NIELSEN <br /><br />KODE MIV BERG, MELINA GRAFF,
-      LAURA NIELSEN OG EMILY NIELSEN <br /><br />REDAKTØR MIV BERG, MELINA
-      GRAFF, LAURA NIELSEN OG EMILY NIELSEN <br /><br />UDGIVET 24. April 2024 <br
-      /><br />BILLEDKILDER: FOTOS AF LOKATIONER FRA I TRÅD MED VERDEN OG DERES
-      MEDARBEJDERE <br /><br />LYDKILDE: Navn STEMME
-    </p>
-  </div>
-  <div>
-    <img src="img/garn.png" alt="garn" class="garn" />
+  <div class="container">
+    <div>
+      <p class="p_footer">
+        TEKST EMILY NIELSEN <br /><br />VISUEL FORMIDLING MIV BERG, MELINA
+        GRAFF, LAURA NIELSEN OG EMILY NIELSEN <br /><br />KODE MIV BERG, MELINA
+        GRAFF, LAURA NIELSEN OG EMILY NIELSEN <br /><br />REDAKTØR MIV BERG,
+        MELINA GRAFF, LAURA NIELSEN OG EMILY NIELSEN <br /><br />UDGIVET 24.
+        April 2024 <br /><br />BILLEDKILDER: FOTOS AF LOKATIONER FRA I TRÅD MED
+        VERDEN OG DERES MEDARBEJDERE <br /><br />LYDKILDE: Navn STEMME
+      </p>
+    </div>
   </div>
 </footer>
 
 <style>
-  .p_footer {
-    margin: 0 20%;
-    text-transform: uppercase;
+  /* style for computer */
+  @media (min-width: 800px) {
+    .p_footer {
+      margin: 0 20%;
+      padding-top: 50px;
+      text-transform: uppercase;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1512/950;
+      background-image: url("img/footer_pc.svg");
+      background-size: cover;
+      background-position: center;
+    }
   }
 
-  .garn {
-    position: absolute;
-    width: 100px;
-    left: 5%;
+  /* style for mobil */
+  @media (max-width: 800px) {
   }
 </style>

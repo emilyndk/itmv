@@ -18,22 +18,20 @@ const {pTextB} = Astro.props;
 
 
 <style>
-.box {
-width: 40%;
-height: 290px;
-  padding: 20px;
-   margin: 15px 0;
+  .box {
+width: 45%;
+height: 180px;
+  padding: 10px;
+   margin: 7.5px 0;
    background: #E4EBF0;
    color:var(--blueD);
-   font-size: 30px;
+   font-size: 3.5vw;
    font-weight: normal;
-   border: 5px dashed var(--red);
+   border: 2.5px dashed var(--red);
    border-radius: 10px;
    box-shadow: 0 0 0 4px #E4EBF0;
-
    cursor: pointer;
 }
-
 .card {
   position: relative;
   width: 100%;
@@ -58,14 +56,14 @@ height: 290px;
   transform: rotateY(180deg);
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   .box {
-width: 45%;
-height: 180px;
-  padding: 10px;
-   margin: 7.5px 0;
-   font-size: 15px;
-   border: 2.5px dashed var(--red);
+width: 40%;
+height: 500px;
+  padding: 85px;
+   margin: 15px 0;
+   font-size: 1.6vw;
+   border: 5px dashed var(--red);
 }
 }
 </style>
