@@ -56,35 +56,28 @@ const {pTextB} = Astro.props;
     z-index: 1;
      filter: drop-shadow(0 0 0.9rem white);
 }
-
-/* .top, .bottom {
-    margin: auto;
-    width: 50%;
-    height: auto;
-} */
-
-/* .clickable1 {
+.clickable1 {
     position: absolute;
-    width: 7%;
+    width: 14%;
     height: auto;
-    top: 495px;
-    right: 251px;
+       top: 20%;
+    right: 20%;
    animation: klik_puls 1.5s ease-in-out infinite;
      transform: scaleX(-1);
-} */
+}
 
-/* .clickable2 {
+.clickable2 {
     position: absolute;
-    width: 7%;
+    width: 14%;
+     top: 47%;
+    right: 65%;
     height: auto;
-    bottom: 183px;
-    left: 259px;
    animation: klik_puls 1.5s ease-in-out infinite;
      transform: scaleX(-1);
-} */
+}
 
 /* Vha. Chatgpt */
-/* @keyframes klik_puls {
+@keyframes klik_puls {
   0% {
     transform: scale(1);
   }
@@ -94,15 +87,11 @@ const {pTextB} = Astro.props;
   100% {
     transform: scale(1);
   }
-} */
+}
 
-/* .blob {
-    position: absolute;
-    top: 100%;
-    z-index: -2; 
-    width: 162.3%; 
-    height: auto;
-} */
+.blob {
+  z-index: -1;
+}
 
 @media (min-width: 800px) {
     .facts {
@@ -123,35 +112,24 @@ const {pTextB} = Astro.props;
   background-image:url(/facts_graphics/sewline.svg);
     }
 
-   
-  /* .blob {
-    width: 100%; 
-    height: auto;
-} */
-
-/* .clickable1 {
-    width: 13%;
-    height: auto;
-    top: 295px;
-    right: 75px;
-} */
-
-/* .clickable2 {
-    width: 13%;
-    height: auto;
-    bottom: 105px;
-    left: 80px;
-   animation: klik_puls 1.5s ease-in-out infinite;
-     transform: scaleX(-1);
-} */
-
-/* .top, .bottom {
+   .top, .bottom {
     margin: auto;
     width: 50%;
     height: auto;
-    padding: 30px 0;
-    z-index: 1;
-  filter: drop-shadow(0 0 0.9rem white);
-} */
+    padding: 5% 0;
+}
+
+.clickable1 {
+    width: 9%;
+    height: auto;
+    top: 18%;
+    right: 25%;
+}
+.clickable2 {
+    width: 9%;
+    height: auto;
+    top: 38%;
+    left: 26%;
+}
 }
 </style>
