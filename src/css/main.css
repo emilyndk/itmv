@@ -31,7 +31,3 @@ img {
   /* font */
   --primary-font: "Arial, Helvetica, sans-serif";
 }
-
-header {
-  position: sticky;
-}
