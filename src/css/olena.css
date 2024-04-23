@@ -42,10 +42,12 @@ img {
 
 .overlay h1 {
   margin-top: 2rem;
+  font-family: var(--primary-font);
 }
 
 .overlay p {
   margin-bottom: 5rem;
+  font-family: var(--primary-font);
 }
 
 .illustrations {
