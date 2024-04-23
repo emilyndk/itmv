@@ -46,53 +46,108 @@
 </body>
 
 <style>
-  .container {
-    position: relative;
-    width: 100%;
-    height: 1360px;
-    background-image: url("img/baggrund_pc.svg");
-    background-size: cover;
-    background-position: center;
+  /* style for pc */
+  @media (min-width: 800px) {
+    .container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1512/1371;
+      background-image: url("img/baggrund_pc.svg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .p_text {
+      padding-top: 60px;
+      background-color: var(--grey);
+      margin: 0 34%;
+      display: flex;
+      justify-content: center;
+      font-size: 1.6vw;
+    }
+    .ikon {
+      position: absolute;
+      width: 70px;
+      z-index: 1;
+      left: 90%;
+      top: 10%;
+      cursor: pointer;
+    }
+    .insta {
+      position: absolute;
+      width: 60px;
+      z-index: 1;
+      left: 90.5%;
+      top: 18%;
+      cursor: pointer;
+    }
+    .fb {
+      position: absolute;
+      width: 60px;
+      z-index: 1;
+      left: 90.5%;
+      top: 26%;
+      cursor: pointer;
+    }
+    .linkedin {
+      position: absolute;
+      width: 60px;
+      z-index: 1;
+      left: 90.5%;
+      top: 34%;
+      cursor: pointer;
+    }
   }
 
-  .p_text {
-    padding-top: 60px;
-    background-color: var(--grey);
-    margin: 0 34%;
-    display: flex;
-    justify-content: center;
-    font-size: 1.6vw;
-  }
-  .ikon {
-    position: absolute;
-    width: 70px;
-    z-index: 1;
-    left: 90%;
-    top: 10%;
-    cursor: pointer;
-  }
-  .insta {
-    position: absolute;
-    width: 60px;
-    z-index: 1;
-    left: 90.5%;
-    top: 16%;
-    cursor: pointer;
-  }
-  .fb {
-    position: absolute;
-    width: 60px;
-    z-index: 1;
-    left: 90.5%;
-    top: 22%;
-    cursor: pointer;
-  }
-  .linkedin {
-    position: absolute;
-    width: 60px;
-    z-index: 1;
-    left: 90.5%;
-    top: 28%;
-    cursor: pointer;
+  /* style for mobil */
+  @media (max-width: 800px) {
+    .container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 390/982;
+      background-image: url("img/baggrund_mobil.svg");
+      background-size: cover;
+      background-position: center;
+    }
+    .p_text {
+      padding-top: 60px;
+      background-color: var(--grey);
+      margin: 0 20%;
+      display: flex;
+      justify-content: center;
+      /* font-size: 1.6vw; */
+    }
+    .ikon {
+      position: absolute;
+      width: 35px;
+      z-index: 1;
+      left: 87%;
+      top: 8%;
+      cursor: pointer;
+    }
+    .insta {
+      position: absolute;
+      width: 30px;
+      z-index: 1;
+      left: 87%;
+      top: 15%;
+      cursor: pointer;
+    }
+    .fb {
+      position: absolute;
+      width: 30px;
+      z-index: 1;
+      left: 87%;
+      top: 22%;
+      cursor: pointer;
+    }
+    .linkedin {
+      position: absolute;
+      width: 30px;
+      z-index: 1;
+      left: 87%;
+      top: 29%;
+      cursor: pointer;
+    }
   }
 </style>
