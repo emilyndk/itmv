@@ -32,16 +32,20 @@ import "../css/main.css"
 
 
 
-    <audio id="audioPlayer" src="audio/Sequence 01_1.mp4"></audio>
+    <audio id="audioPlayer" src="audio/interview.mp3"></audio>
 
 
 </body>
 
 <script>
-
     document.addEventListener('DOMContentLoaded', () => {
-        const audioPlayer = document.getElementById('audioPlayer');
+        const audioPlayer = document.getElementById('audioPlayer') as HTMLAudioElement;
         const playButton = document.getElementById('playButton');
+
+        if (!audioPlayer || !playButton) {
+            console.error("Audio player or play button not found");
+            return;
+        }
 
         playButton.addEventListener('click', () => {
             if (audioPlayer.paused) {
@@ -53,17 +57,17 @@ import "../css/main.css"
             }
         });
 
+        const timebarFilled = document.querySelector('.timebar-filled') as HTMLElement;
 
-        const timebarFilled = document.querySelector('.timebar-filled');
-
-        audioPlayer.addEventListener('timeupdate', () => {
-            const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
-            timebarFilled.style.width = `${progress}%`;
-        });
-    })
-
-
-
+        if (timebarFilled) {
+            audioPlayer.addEventListener('timeupdate', () => {
+                const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+                timebarFilled.style.width = `${progress}%`;
+            });
+        } else {
+            console.error("Timebar element not found");
+        }
+    });
 </script>
 
 </html>

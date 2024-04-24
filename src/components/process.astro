@@ -8,12 +8,17 @@ import "../css/main.css"
         <div class="scroll_indicator"></div>
     </div>
 
-
-<script>window.addEventListener("scroll", onScroll);
-
-    function onScroll() {
-        var scrolled = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolledfactor = (scrolled / height) * 100;
-        document.querySelector(".scroll_indicator").style.width = `${scrolledfactor}%`;
-    }</script>
+    <script>
+        window.addEventListener("scroll", onScroll);
+    
+        function onScroll() {
+            var scrolled = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolledfactor = (scrolled / height) * 100;
+            const scrollIndicator = document.querySelector(".scroll_indicator") as HTMLElement;
+            if (scrollIndicator) {
+                scrollIndicator.style.width = `${scrolledfactor}%`;
+            }
+        }
+    </script>
+    
