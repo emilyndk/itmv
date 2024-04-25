@@ -150,13 +150,9 @@ html {
 }
 
 .parallax {
-  /* The image used */
   background-image: url("/img/step1photo.jpg");
-
-  /* Full height */
   height: 100%;
-
-  /* Create the parallax scrolling effect */
+  background-position: 50% 50%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
